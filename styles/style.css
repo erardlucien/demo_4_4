@@ -132,14 +132,16 @@
 
 .breadcrumb-link::before {
     content: '';
-    width: 0%;
+    width: 0;
     display: block;
+    position: absolute;
     height: 2px;
 }
 .breadcrumb-link::after {
     content: '';
-    width: 100%;
+    width: 68px;
     display: block;
+    position: absolute;
     height: 2px;
 }
 
@@ -150,12 +152,12 @@
 
 .breadcrumb-link:hover::before {
     background: linear-gradient(to left, hsla(0, 100%, 23%, 0.3) 33%, hsla(54, 89%, 46%, 1) 67%, hsla(0, 0%, 100%, 1) 87%);
-    width: 100%;
+    width: 68px;
     transition: 0.4s;
 }
 .breadcrumb-link:hover::after {
     background: linear-gradient(to right, hsla(0, 100%, 23%, 0.3) 33%, hsla(54, 89%, 46%, 1) 67%, hsla(0, 0%, 100%, 1) 87%);
-    width: 0%;
+    width: 0;
     transition: 0.4s;
 }
 
