@@ -127,8 +127,6 @@
     display: block;
     text-decoration: none;
     color: black;
-    position: relative;
-    width: 95px;
     padding: 5px 16px;
 }
 
@@ -136,14 +134,12 @@
     content: '';
     width: 0%;
     display: block;
-    position: absolute;
     height: 2px;
 }
 .breadcrumb-link::after {
     content: '';
     width: 100%;
     display: block;
-    position: absolute;
     height: 2px;
 }
 
