@@ -50,9 +50,13 @@
 
 .breadcrumb-label {
     position: absolute;
-    top: 23px;
-    left: 90%;
-    margin: 0 16px 0 0;
+    margin: -10px 16px -16px 93%;
+    transition: 0.4s;
+}
+
+.breadcrumb-label:hover .closed::before,
+.breadcrumb-label:hover .closed::after {
+    width: 16px;
     transition: 0.4s;
 }
 
@@ -79,12 +83,12 @@
 
 .closed::before {
     width: 20px;
-    top: -5px;
+    top: -6px;
 }
 
 .closed::after {
     width: 5px;
-    top: 5px;
+    top: 6px;
 }
 
 /* opened */
@@ -163,7 +167,7 @@
 
 /* for big screen */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     /* breadcrumb */
 
     .breadcrumb {
