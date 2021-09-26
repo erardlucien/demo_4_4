@@ -109,13 +109,11 @@
 }
 
 .opened::before {
-    transform: rotate(405deg) translate(3px, 4px);
-    top: -5px;
+    transform: rotate(405deg);
 }
 
 .opened::after {
-    transform: rotate(-405deg) translate(3px, -4px);
-    top: 5px;
+    transform: rotate(-405deg);
 }
 
 /* breadcrumb-menu */
